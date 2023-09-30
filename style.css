@@ -1,0 +1,186 @@
+	
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
+
+/* html
+*************************************** */
+/* header */ 
+header {
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10000;
+}
+
+/* tag */
+
+ h1 {
+    font-size: 34px;
+ }
+
+ h2 {
+    font-size: 24px;
+ }
+
+ nav {
+    font-size: 34px;
+ }
+
+nav  a {
+    text-decoration: none;
+    margin: 0 20px;
+}
+nav a:link {
+color: #0d0d0d;
+}
+nav a:visited {
+color: #0d0d0d;
+}
+nav a:hover {
+color: #0d0d0d;
+}
+nav a:active {
+color: #0d0d0d;
+}
+
+/* id tag */
+ 
+ #name {
+    font-size: 18px;
+    list-style: none;    
+ }
+
+ #mypro {
+    border: 3px solid black;
+ }
+
+/* body */
+/* ************************************* */
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    overflow-x: hidden;
+}
+
+nav a {
+    font-size: 34px;
+}
+
+.sec-title {
+    font-size: 34px;
+}
+
+
+/*================
+ 769px- 用のスタイル 
+=================*/
+@media screen and (min-width: 768px) {
+
+/* header */
+/* ************************************* */
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* main */
+/* ************************************* */
+
+/* MainVisual section */
+#mainvisual > img {
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* About section */
+#about {
+    text-align: center;
+}
+
+#about > div {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    height: 120px;
+}
+
+#about > div > img{
+    height: 100%;
+    border-radius: 50%;
+    margin-right: 10%;
+}
+
+#about > div > div {
+    text-align: left;
+}
+
+/* Works section */
+
+#works{
+    width: 100%;
+    overflow-wrap: break-word;
+}
+
+#works > h1{
+    font-size: 34px;
+    text-align: center;
+}
+
+#works-div1{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+#works-div1 > div {
+    width: 30%;
+} 
+
+#works-div1 > div > img {
+    width: 100%;
+}
+
+#works-div1 > div > p {
+    font-size: 18px;
+}
+
+/* footer */
+/* ************************************* */
+footer > p {
+    text-align: center;
+    font-size: 18px;
+}
+
+}
+
+/*================
+ - 766px 用のスタイル 
+=================*/
+
+@media screen and (max-width: 767px) {
+    
+    body {
+        text-align: center;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #mainvisual > img {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    #about > div > img{
+        width: 20%;
+        height: 20%;
+        border-radius: 50%; 
+        margin-left: auto;  
+    }
+
+    #about > div > div {
+        text-align: left;
+        margin: 0 20%;
+    }
+}
